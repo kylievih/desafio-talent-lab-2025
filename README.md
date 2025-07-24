@@ -1,83 +1,110 @@
 # 🚀 Desafio Talent Lab 2025 — Dados que Transformam
 
-Este repositório contém a solução desenvolvida por [Seu Nome Aqui] para o **Desafio "Dados que Transformam" da Talent Lab 2025**, utilizando dados públicos do e-commerce brasileiro (Olist).
+Este repositório contém a solução desenvolvida por **Glauber Patrik** para o **Desafio "Dados que Transformam" da Talent Lab 2025**, utilizando dados públicos do e-commerce brasileiro (projeto Olist).
 
 ---
 
 ## 🧠 Objetivo
 
-Realizar um pipeline completo de **ETL (Extração, Transformação e Carga)**, seguido de **Análise Exploratória de Dados (EDA)** para responder perguntas de negócio a partir de dados reais do e-commerce nacional.
+Realizar um pipeline completo de **ETL (Extração, Transformação e Carga)**, seguido de **Análise Exploratória de Dados (EDA)** com visualizações para responder a perguntas estratégicas de negócio. Todo o processo foi documentado, automatizado em Python e estruturado em um repositório limpo e modular.
 
 ---
 
 ## 🛠️ Ferramentas Utilizadas
 
 - Python 3.13
-- Pandas, Numpy
+- Pandas, NumPy
 - Matplotlib, Seaborn, Plotly
 - Jupyter Notebook
-- VSCode / PyCharm
+- Visual Studio Code
 - Git e GitHub
 
 ---
 
 ## 🧱 Estrutura do Projeto
 
+```bash
 📦 desafio_talent_lab/
-├── 📂 data/ # Dados originais CSV (Olist)
-├── 📂 processed/ # Dados tratados prontos para análise
+├── 📂 data/                      # Dados originais CSV (Olist)
+├── 📂 processed/                 # Dados tratados prontos para análise
 ├── 📂 scripts/
-│ └── etl.py # Script de limpeza e transformação
+│   └── etl.py                   # Script de limpeza e transformação (ETL)
 ├── 📂 notebooks/
-│ └── eda.ipynb # Análises exploratórias por bloco
-├── README.md # Este arquivo
-├── requirements.txt # Bibliotecas necessárias
+│   ├── eda.ipynb                # Notebook com visualizações e análises
+│   └── eda.html                 # Versão navegável do notebook
+├── requirements.txt             # Bibliotecas utilizadas
+└── README.md                    # Este arquivo
 
----
+```
 
 ## 🔍 Questões de Análise Respondidas
 
-Conforme solicitado no desafio, foi escolhida **uma pergunta por bloco temático**, totalizando 5 análises:
+De acordo com o desafio, uma questão de cada bloco temático foi selecionada e resolvida:
 
-| Tópico                   | Questão                                                |
-| ------------------------ | ------------------------------------------------------ |
-| 📦 Performance de Vendas | Volume de vendas por categoria                         |
-| 🚚 Logística             | Prazos médios de entrega e fatores que causam atrasos  |
-| ⭐ Satisfação do Cliente | Relação entre atrasos e avaliações negativas           |
-| 💰 Financeiro            | Lucratividade por categoria de produto                 |
-| 📈 Marketing             | Eficácia de campanhas promocionais no volume de vendas |
+Tópico Questão Respondida
+📦 Performance de Vendas Volume de vendas por categoria
+🚚 Logística Prazos médios de entrega e fatores que causam atrasos
+⭐ Satisfação do Cliente Relação entre atrasos na entrega e avaliações negativas
+💰 Financeiro Lucratividade por categoria de produto
+📈 Marketing Eficácia de campanhas promocionais ao longo do tempo
 
----
+## 📊 Visualizações Geradas
+
+Gráfico de barras com as 10 categorias que mais vendem.
+
+Histograma com a distribuição dos prazos de entrega.
+
+Boxplot da nota dos clientes com e sem atraso na entrega.
+
+Gráfico de lucratividade (margem bruta) por categoria.
+
+Linha temporal da evolução de vendas mês a mês.
 
 ## ⚙️ Como Executar o Projeto
 
-### 1. Clone este repositório
-
-```bash
-git clone https://github.com/seu-usuario/desafio-talent-lab-2025.git
-cd desafio-talent-lab-2025
-```
-
+1. Clone este repositório
+   bash
+   Copiar
+   Editar
+   git clone https://github.com/kylievih/desafio-talent-lab-2025.git
+   cd desafio-talent-lab-2025
 2. Crie um ambiente virtual (opcional, mas recomendado)
-   python -m venv venv
-   venv\Scripts\activate # Windows
-   source venv/bin/activate # macOS/Linux
+   bash
+   Copiar
+   Editar
+   python -m venv .venv
+   .venv\Scripts\activate # Windows
+   source .venv/bin/activate # macOS/Linux
 3. Instale as dependências
+   bash
+   Copiar
+   Editar
    pip install -r requirements.txt
-4. Execute o ETL
+4. Execute o script de ETL
+   bash
+   Copiar
+   Editar
    python scripts/etl.py
-5. Execute a análise
-   Abra o notebook:
+5. Inicie o Jupyter Notebook
+   bash
+   Copiar
+   Editar
    jupyter notebook notebooks/eda.ipynb
+   📄 Acesso Rápido à Análise
+   📂 Veja a versão visual da análise aqui:
+   👉 notebooks/eda.html
 
 ## 📌 Observações Técnicas
 
-1. Todos os dados utilizados são públicos (Olist, disponíveis no Kaggle).
-2. Os dados foram limpos, integrados e transformados no arquivo etl.py.
-3. As visualizações estão concentradas em eda.ipynb.
-4. O projeto preza pela legibilidade do código e pela clareza das análises.
+Os dados utilizados são públicos e vêm do dataset da Olist (via Kaggle).
+
+A estrutura foi pensada para facilitar reuso e leitura de código.
+
+O ETL transforma e unifica os dados em um único .csv para análise.
+
+Todas as análises estão em Jupyter Notebook com visualizações explicativas.
 
 ## 🧑‍💻 Autor
 
 Glauber Patrik
-Estudante de Engenharia de Software | UFAM
+Estudante de Engenharia de Software — ICET/UFAM
