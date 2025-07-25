@@ -78,21 +78,41 @@ Linha temporal da evolução de vendas mês a mês.
 ## ⚙️ Como Executar o Projeto
 
 1. Clone este repositório
+
+```bash
    git clone https://github.com/kylievih/desafio-talent-lab-2025.git
    cd desafio-talent-lab-2025
+```
+
 2. Crie um ambiente virtual (opcional, mas recomendado)
+
+```bash
    python -m venv .venv
    .venv\Scripts\activate # Windows
    source .venv/bin/activate # macOS/Linux
+```
+
 3. Instale as dependências
+
+```bash
    pip install -r requirements.txt
+```
+
 4. Execute o script de ETL
+
+```bash
    python scripts/etl.py
+```
+
 5. Inicie o Jupyter Notebook
+
+```bash
    jupyter notebook notebooks/eda.ipynb
-   📄 Acesso Rápido à Análise
-   📂 Veja a versão visual da análise aqui:
-   👉 notebooks/eda.html
+```
+
+- 📄 Acesso Rápido à Análise
+- 📂 Veja a versão visual da análise aqui:
+- 👉 notebooks/eda.html
 
 ## 📌 Observações Técnicas
 
