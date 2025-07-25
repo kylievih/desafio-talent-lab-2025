@@ -42,10 +42,15 @@ Realizar um pipeline completo de **ETL (Extração, Transformação e Carga)**, 
 De acordo com o desafio, uma questão de cada bloco temático foi selecionada e resolvida:
 
 Tópico Questão Respondida
+
 📦 Performance de Vendas Volume de vendas por categoria
+
 🚚 Logística Prazos médios de entrega e fatores que causam atrasos
+
 ⭐ Satisfação do Cliente Relação entre atrasos na entrega e avaliações negativas
+
 💰 Financeiro Lucratividade por categoria de produto
+
 📈 Marketing Eficácia de campanhas promocionais ao longo do tempo
 
 ## 📊 Visualizações Geradas
@@ -63,32 +68,17 @@ Linha temporal da evolução de vendas mês a mês.
 ## ⚙️ Como Executar o Projeto
 
 1. Clone este repositório
-   bash
-   Copiar
-   Editar
    git clone https://github.com/kylievih/desafio-talent-lab-2025.git
    cd desafio-talent-lab-2025
 2. Crie um ambiente virtual (opcional, mas recomendado)
-   bash
-   Copiar
-   Editar
    python -m venv .venv
    .venv\Scripts\activate # Windows
    source .venv/bin/activate # macOS/Linux
 3. Instale as dependências
-   bash
-   Copiar
-   Editar
    pip install -r requirements.txt
 4. Execute o script de ETL
-   bash
-   Copiar
-   Editar
    python scripts/etl.py
 5. Inicie o Jupyter Notebook
-   bash
-   Copiar
-   Editar
    jupyter notebook notebooks/eda.ipynb
    📄 Acesso Rápido à Análise
    📂 Veja a versão visual da análise aqui:
