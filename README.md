@@ -43,15 +43,25 @@ De acordo com o desafio, uma questão de cada bloco temático foi selecionada e 
 
 Tópico Questão Respondida
 
-📦 Performance de Vendas Volume de vendas por categoria
+📦 1. Análise de Performance de Vendas:
 
-🚚 Logística Prazos médios de entrega e fatores que causam atrasos
+- a. Volume de Vendas por Categoria
 
-⭐ Satisfação do Cliente Relação entre atrasos na entrega e avaliações negativas
+🚚 2. Análise de logística:
 
-💰 Financeiro Lucratividade por categoria de produto
+- a. Prazos de Entrega
 
-📈 Marketing Eficácia de campanhas promocionais ao longo do tempo
+⭐ 3. Análise de Satisfação do Cliente
+
+- b. Impacto dos Atrasos na Satisfação do Cliente
+
+💰 4. Análise Financeira
+
+- a. Análise de Lucratividade por Categoria
+
+📈 5. Análise de Marketing
+
+- b. Eficácia de Campanhas Promocionais
 
 ## 📊 Visualizações Geradas
 
