@@ -1,11 +1,9 @@
 import zipfile
 import os
 
-# Caminho do arquivo zip do dataset Olist (COM 'r' antes da string)
 zip_path = r"C:\Users\Netgi\Desktop\ProjetoX\Desafio Bemol\Brazilian E-Commerce Public Dataset by Olist.zip"
 extract_path = r"C:\Users\Netgi\Desktop\ProjetoX\Desafio Bemol\Brazilian E-Commerce Public Dataset by Olist"
 
-# Crie o diretório de extração se ele não existir
 os.makedirs(extract_path, exist_ok=True)
 
 try:
@@ -13,7 +11,6 @@ try:
         zip_ref.extractall(extract_path)
     print(f"✅ Banco de dados extraído para: {extract_path}")
     
-    # Listar conteúdo da pasta de extração principal
     print("\n📁 --- Conteúdo da pasta extraída ---")
     conteudo_da_pasta = os.listdir(extract_path)
     if conteudo_da_pasta:
@@ -23,7 +20,6 @@ try:
         print(f"A pasta '{extract_path}' está vazia ou não contém arquivos visíveis.")
     print("-----------------------------------")
 
-    # Caminho da subpasta onde realmente estão os arquivos CSV
     subpasta_path = os.path.join(extract_path, "Brazilian E-Commerce Public Dataset by Olist")
 
     print("\n📂 --- Conteúdo REAL da subpasta com os arquivos CSV ---")
